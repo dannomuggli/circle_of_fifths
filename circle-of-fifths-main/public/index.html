@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Uncomment if you want your page to NOT be indexed by search engines: -->
+  <!-- <meta name="robots" content="none"> -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Circle of Sound</title>
+
+  <!-- Uncomment if using d3: -->
+  <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+</head>
+
+<!------------------------------------------------------------>
+<!-- You are free to modify this template however you want! -->
+<!------------------------------------------------------------>
+
+
+<style>
+  div {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  </style>
+
+<body>
+  <div class=container>
+  <header>
+    <h1><a href=".">Circle of Sound</a></h1>
+
+    <p>
+      <strong>Team Members</strong>: Jasper Balinas, Danno Muggli, Kian Farahani, Geoffrey Aldrich
+    </p>
+  </header>
+
+  <!-- SOUND WAVE TEXT AND VIZ -->
+  <div class="dropdown">
+    <button class="dropbtn"> The Basics of Sound </button>
+    <div class="dropdown-content">
+      <div class="text-box">
+   
+          <p>
+            The phenomenon of sound can be visualized through sound waves.    
+          </p>
+          <p>
+            There are different notes, pitches, and octaves.
+            The sound wave below can be transformed to explore these variations. Select options 
+            from the dropdown menu to observe an isolated sound wave.
+          </p>
+
+          <!-- PUT SOUND WAVE VISUALIZATION HERE-->
+          <div class="center-container">
+            <iframe width="100%" height="329" frameborder="0"
+            src="https://observablehq.com/embed/ac9a57ba5b0853b4?cells=soundwaveContainer%2Cfreqs"></iframe>
+          <br><br>
+          <p>
+            This is the physical manifestation of all musical concepts.
+            Experience the tangible connection between the theory and physics of sound.
+          </p>
+
+      </div>
+    </div> 
+
+  </div>
+
+  <br><br>
+  <div class="center-container">
+  <h3 class="centered-text"> The Circle of Fifths </h3>
+  <p class="centered-text">
+    The Circle of Fifths is one of the cornerstones of music theory. 
+  </p>
+  <p class="centered-text">  
+    It is more than just a musical concept; it's a beautiful blending of art and mathematics. 
+  </p>
+  <h2>_</h2>
+  <p class="centered-text">
+    The Circle of Fifths is significant due to its ability to reveal intricate patterns in music, particularly in the formation of major and minor scales, which are foundational to Western music. 
+    <br><br>
+    The construction of a major scale follows a specific pattern of intervals: 
+    <br>
+    Whole (W), Whole (W), Half (H), Whole (W), Whole (W), Whole (W), Half (H)
+    <br><br> 
+    Starting from any note and applying this sequence of whole and half tones yields a major scale. 
+    <br><br>
+    For instance, beginning with C and adhering to this pattern results in the C major scale: C-D-E-F-G-A-B-C.        
+    Similarly, a minor scale can be constructed using a different interval pattern: 
+    <br>
+    Whole (W), Half (H), Whole (W), Whole (W), Half (H), Whole (W), Whole (W)
+    <br><br>
+    This pattern is essentially a rotation of the major scale pattern, starting from a different point. 
+    Notably, the sixth note of any major scale serves as the root for its relative minor. 
+    In the case of C major, the sixth note is A, leading to the A minor scale (A-B-C-D-E-F-G) when following the minor scale pattern. 
+    The notes in A minor are the same as in C major but arranged differently.
+    <br><br>
+    This relationship between major and minor scales, along with their respective patterns of sharps and flats, is elegantly represented in the Circle of Fifths. 
+    The arrangement of relative minors in the Circle mirrors that of their major counterparts, albeit shifted. 
+    The Circle of Fifths thus provides a visual and conceptual framework for understanding and comparing the structures of major and minor scales, 
+    their shared notes, and the progression of sharps and flats across the 12 pitches.
+    <br><br>
+  </p>
+
+  <p class="centered-text">
+    The "Circle of Sound" project brings this harmony to life through an interactive digital tool, making it accessible and engaging for everyone from first time learners to those who have been studying music and its theory. This circle is a geometric representation of the 12 pitches of the chromatic scale, their key signatures, and the associated major and minor keys. 
+    <br><br>
+    It uses modular arithmetic, like a clock, with 12 unique notes in the Western musical scale. Moving around the circle, each step represents a perfect fifth interval, and after 12 steps, you return to the starting note. The note at 1 o' clock is the tonic, the foundational note upon the rest of the scale is built. 
+    <br><br>
+    <i>The leftmost circle below is an interactive Circle of Fifths.</i>
+    <br>
+    The green outer ring represents keys, while the pink inner keys represent their relative keys. 
+    <br>
+    In this interactive circle, the capital letters represent the keys of major scales. The lowercase letters represent keys of minor scales.
+    <br><br>
+    Press any note on the outer ring of the left circle to assign it as the tonic -- making the scale in the key of that note.
+    Use the "Mode Toggle" button to toggle between the outermost ring representing major scales (Ionian mode) of minor scales (Aeolian mode).
+    <br><br>
+    <i>The rightmost circle below plays the notes on the Circle of Fifths </i>
+    <br>
+    Please select the pitch (neutral, sharp, or flat) to observe the tone. The note will be held until you press it again.
+    <br>
+    Multiple notes can be held simultaneously, to observe creating chords.
+    <br>
+    Please see "A Deep Dive into The Circle of Fifths" at the bottom of the page for a detailed look on chord creation.
+    <br><br>
+  </p>
+
+  <div class=container>
+  <iframe width="100%" height="1172" frameborder="0"
+  src="https://observablehq.com/embed/4256adb10a776df1@683?cells=arcGenerator%2CtoggleButton%2CmyVis"></iframe>
+  </div>
+
+    <img src="images/upfifths.png" alt="upfifths" width="300px">
+
+    <br><br>
+    <h4>
+      Why is it called the Circle of Fifths?
+    </h4>
+      <p>        
+        Ascending a perfect fifth -- equivalent to seven semitones -- from any note in the chromatic scale and repeating this process multiple times,
+        encompasses all twelve pitches of the scale, ultimately culminating at the initial starting note, or the tonic.
+        
+        This concept can also be understood through scale relationships:
+        The fifth note of the C major scale is G; the fifth note of the G major scale is D.
+        This sequential progression of notes, when mapped out, aligns with the clockwise arrangement observed 
+        in The Circle of Fifths, as depicted in the diagram above.
+      </p>
+  
+
+  <h2>_</h2>
+    <h4>
+      What can I use the circle for?
+    </h4>
+      <p>
+        Transposition is a crucial concept in music, particularly for players of certain instruments that are tuned to specific keys by default. 
+        For instance, most trumpets are keyed in B♭, meaning they naturally sound a B♭ when playing a written C. 
+        This necessitates the adaptation of music to align with concert pitch, which is the standard pitch reference for most western music.
+        <br><br>
+        In practice, if a trumpet player (whose instrument is in B♭) is presented with a piece of music in concert C (the standard pitch), they must transpose their part up by two steps to play it correctly. 
+        This transposition aligns the trumpet's pitch with the concert pitch. Using the Circle of Fifths, this transposition process can be visualized and simplified.
+        By moving two steps clockwise on the Circle from C, the trumpet player identifies D as the key to play in to match the concert C pitch.
+        <br><br>
+        The Circle of Fifths thus serves not only as a theoretical tool for understanding key relationships and scale patterns but also as a practical guide for musicians, 
+        particularly those playing transposing instruments, to quickly and accurately adjust their playing to align with concert pitch standards.
+      </p>
+      
+      <h2>_</h2>
+      <h4>
+        Visualizing the Circle of Fifths on Piano
+      </h4>    
+    <p> 
+      When using the Circle of Fifths, it can be difficult to understand its
+      purpose and patterns without using an instrunment: to address this, please utilize this virtual piano to
+      explore the major and minor scales, observing how they differ in notes, as well as how the numbers of 
+      sharps or flats change as you ascend and descend the scale.
+    </p>
+
+    <div class="dropdown">
+      <button class="dropbtn">Piano Basics</button>
+      <div class="dropdown-content">
+        <img src="images/2octaves.jpg" alt="2octaves" width="300px">
+        <div class="text-box">
+            <p>
+              The image above showcases two octaves on a piano, comprising 12 distinct notes. The black keys represent sharps (#)/flats (♭), serving as a visual guide to the chromatic scale. A sharp is defined as half tone, or semitone, higher than the corresponding white key. For example, C# is located immediately to the right of C. Conversely, a flat is a semitone lower than a white key, such as E♭, which is situated to the left of E. This dual representation of black keys as either sharps or flats offers a versatile approach to understanding their musical significance. Similarly, we have a whole tone, which consists of two semitones: this involves skipping an adjacent key. For instance, moving a whole tone above C# reaches D#; the same interval from C leads to D.This pattern of 12 keys repeats across the piano keyboard, ascending in pitch with each successive octave. 
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <iframe width="100%" height="602" frameborder="0"
+  src="https://observablehq.com/embed/3de781e560cc151b?cells=title%2Cviewof+modeSelect%2Cviewof+chosenMelody%2Cviewof+player%2Cgraph%2Cnotes&api_key=e87af7aaacaf292383040799d077445395ad8fe8"></iframe>
+
+    <br><br>
+    <img src="images/wikicircle.png" alt="wikicircle" width="300px">
+        
+    <h2>_</h2>
+    <h4>
+      What are the drawings next to the circle?
+    </h4>
+      <p>
+        These represent key signatures, an essential element in understanding scale construction and harmony in music. 
+        Key signatures are used to indicate which notes in a scale are sharp or flat, and they are particularly significant 
+        as both major scales and their relative minor scales share the same key signatures.
+
+        Observing the Circle of Fifths, one notices that the key of C major, positioned at the top, has no sharps or flats. 
+        Moving clockwise around the circle, each step adds a sharp to the key signature. 
+        Conversely, moving counterclockwise introduces flats. This incremental addition of sharps and flats is not arbitrary; 
+        it follows a specific sequence, which is conveniently outlined on the Circle itself.
+
+        The sequence for adding sharps is F-C-G-D-A-E-B, often remembered through various mnemonics. 
+        For flats, the sequence is the reverse of the sharps: B-E-A-D-G-C-F. 
+        This symmetry between the order of sharps and flats is a key aspect of the Circle's design.
+
+        For example, F major, located one step counterclockwise from C major, has one flat. 
+        According to the sequence, the first flat is B, thus in F major, B is played as B♭. 
+        Similarly, D major, two steps clockwise from C, has two sharps. 
+        Following the order of sharps, F is played as F♯ and C as C♯ in the key of D major.
+
+        By exploring these patterns on the Circle of Fifths, musicians and students can gain a deeper understanding of key signatures, their relationship to scales, and how they affect the tonality of music.
+      </p>
+
+      </div> 
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">A Deep Dive into the Circle of Fifths</button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+            <img src="images/img1.png" alt="Johann David Heinichen">
+            <p> Johann David Heinichen </p>
+          </div>
+          <div class="column">
+            <img src="images/img2.png" alt="Nikolai Diletskii">
+            <p> Nikolai Diletskii </p>
+          </div>
+        </div>
+        
+          <div class="text-box">
+            
+            <p>
+              Historically, the Circle of Fifths was developed over time, with contributions from several music theorists. 
+              One of the earliest mentions was by Nikolai Diletskii in the 17th century. Johann David Heinichen further refined the concept in the 18th century. 
+              Their work laid the foundation for understanding musical relationships and key signatures, which are visually represented in the Circle of Fifths. 
+            </p>
+            <br>
+            <p>
+              The musicians of today use the Circle of Fifths to create chord progressions that are structurally sound, and pleasing to the ears. 
+              The Circle of Fifths reveals discernible patterns in chord construction, significantly aiding in understanding chordal relationships in music theory. 
+              Major chords are constructed by selecting a root note, then adding the note located one step clockwise on the circle (a perfect fifth from the root), 
+              and finally including the note four steps clockwise from the root (a major third from the root). 
+              The concept of intervals, specifically perfect fifths and major thirds, underpins this chord structure.
+
+              For minor chords, an intriguing pattern emerges: they can be conceptualized as the reflection of their relative major chords about the root note. 
+              This mirroring effect illustrates the close relationship between major and minor chords, emphasizing their interconnectedness within the Circle of Fifths.
+
+              The proximity of notes on the Circle of Fifths influences the perceived consonance or dissonance of the chords they form. 
+              Chords constructed from notes that are close together on the circle generally sound more harmonious and pleasing. 
+              In contrast, chords formed from notes that are more widely spaced on the circle tend to produce sounds that are considered unconventional or dissonant. 
+              This relationship between spatial arrangement on the circle and auditory perception is a key aspect of the Circle of Fifths, offering insight into the inherent structure and aesthetics of musical harmony.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="dropdown">
+      <button class="dropbtn">Bibliography</button>
+      <div class="dropdown-content">
+        <div class="text-box">
+            <p>
+              Cazaubon, Mantius. Piano Keys and Notes. 2009. Piano-Keyboard-Guide.Com, https://www.piano-keyboard-guide.com/wp-content/uploads/2018/12/Piano-Keys-and-Notes-Piano-Keyboard-Diagram-1.jpg. Accessed 2 Dec. 2023. 
+              <br><br>
+              Blair, Emma. Circle of Fifths Highlighted Tonic Notes. 28 Feb. 2023. Emmablairpiano.Com, https://emmablairpiano.com/wp-content/uploads/2023/02/Circle-of-Fifths-Highlighted-Tonic-Notes.png. Accessed 4 Dec. 2023. 
+              <br><br>
+              Bill, Just Plain. Circle of Fifths. 28 July 2008. Wikipedia.Com, https://en.wikipedia.org/wiki/Circle_of_fifths#/media/File:Circle_of_fifths_deluxe_4.svg. Accessed 4 Dec. 2023. 
+              <br><br>
+
+            </p>
+        </div>
+      </div>
+    </div>
+
+  
+
+  </div>
+  <!-- maindiv -->
+  
+
+  <footer>
+    <p>
+      <a href="https://gitlab.cs.washington.edu/cse442/23au/final-project/circle-of-fifths">Repository</a>
+      <br>
+      <a href="https://courses.cs.washington.edu/courses/cse442/23au/">CSE 442 Data Visualization</a>
+      <br>
+      <a href="https://www.washington.edu">University of Washington</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
